@@ -50,4 +50,4 @@ Backend, veritabanı veya giriş sistemi yoktur; arama tamamen tarayıcıda çal
 
 ## Repository bağlantısı
 
-GitHub: **https://github.com/KULLANICI_ADI/REPO_ADI** (öğretim elemanının erişebilmesi için repository herkese açık olmalıdır)
+GitHub: https://github.com/ayseetoprak/devkit-rehberi 
