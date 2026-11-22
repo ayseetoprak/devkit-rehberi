@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevKit Rehberi - İçerikler</title>
+  <meta name="description" content="Yeni başlayanlar için beş yazılım aracı kataloğu ve başlığa göre arama.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">DevKit Rehberi</a>
+      <nav aria-label="Ana menü">
+        <ul class="nav-list">
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="icerikler.html" aria-current="page">İçerikler</a></li>
+          <li><a href="hakkinda.html">Hakkında</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>İçerikler</h1>
+    <p class="lead">Beş aracı başlığına göre arayabilirsiniz.</p>
+
+    <form class="search-box" id="search-form" role="search" onsubmit="return false">
+      <div class="search-field">
+        <label for="search-input">Başlıkta ara</label>
+        <input type="text" id="search-input" name="q" placeholder="Örn. git" autocomplete="off">
+      </div>
+      <button type="button" class="btn btn-secondary" id="clear-btn">Temizle</button>
+    </form>
+
+    <p class="result-count" id="result-count" aria-live="polite"></p>
+    <p class="empty-message hidden" id="empty-message" role="status">
+      Aramanızla eşleşen içerik bulunamadı. Başka bir başlık deneyin.
+    </p>
+
+    <section class="card-grid" id="card-list" aria-label="İçerik kartları">
+      <article class="card" data-title="Visual Studio Code">
+        <h3>Visual Studio Code</h3>
+        <p>Ücretsiz ve eklenti desteği güçlü bir kod düzenleyici. HTML, CSS ve JavaScript yazmak için ideal bir başlangıçtır.</p>
+        <p class="meta">Kategori: Kod düzenleyici · İlk görev: Bir index.html dosyası oluşturup tarayıcıda açın.</p>
+      </article>
+
+      <article class="card" data-title="Git">
+        <h3>Git</h3>
+        <p>Projedeki değişiklikleri sürüm sürüm kaydeden sürüm kontrol sistemi. Hata yapınca eski haline dönmeyi sağlar.</p>
+        <p class="meta">Kategori: Sürüm kontrolü · İlk görev: git init ile depo oluşturup ilk commit'inizi yapın.</p>
+      </article>
+
+      <article class="card" data-title="GitHub">
+        <h3>GitHub</h3>
+        <p>Git depolarını internette barındıran ve iş birliği yapmayı kolaylaştıran platform. Projenizi paylaşmanın ve yedeklemenin yoludur.</p>
+        <p class="meta">Kategori: Kod barındırma · İlk görev: Bir repository oluşturup projenizi push edin.</p>
+      </article>
+
+      <article class="card" data-title="Postman">
+        <h3>Postman</h3>
+        <p>API isteklerini kod yazmadan deneyip yanıtları inceleyen araç. Web servislerinin nasıl çalıştığını görmek için kullanılır.</p>
+        <p class="meta">Kategori: API testi · İlk görev: Herkese açık bir API'ye GET isteği gönderin.</p>
+      </article>
+
+      <article class="card" data-title="Chrome DevTools">
+        <h3>Chrome DevTools</h3>
+        <p>Tarayıcının içinde gelen geliştirici araçları. Sayfanın HTML'ini, CSS'ini ve hatalarını canlı olarak incelemenizi sağlar.</p>
+        <p class="meta">Kategori: Hata ayıklama · İlk görev: F12 ile açıp bir başlığın rengini canlı olarak değiştirin.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">BPR201 - İnternet Tabanlı Programlama · Haftalık Proje Ödevi - 2</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
